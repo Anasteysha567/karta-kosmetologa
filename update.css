@@ -1,1 +1,189 @@
 :root{--ink:#512944;--muted:#82596f;--green:#ad276a;--soft:#ffe4ef;--paper:#fff7fa;--line:#f1cada;--gold:#dc648a;--warn:#9b4e32;--red:#bf2558}body{background:linear-gradient(180deg,#fff0f6,var(--paper) 400px)}.stat{background:#ffe2ed;border-color:#f4b7cf}.mic-panel{background:linear-gradient(125deg,#b32a71,#df6099);color:white}.mic-panel p,.mic-panel .live{color:#fff}.btn:not(.outline):not(.secondary){background:#ac286d;color:white}.nav{display:flex;justify-content:space-around}.nav button{font-size:10px;min-width:0;flex:1;padding:7px 2px}.cal-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:15px}.cal-head .btn{min-width:40px}.cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:5px}.cal-week{text-align:center;color:var(--muted);font-size:11px;padding-bottom:8px}.cal-day{min-width:0;min-height:43px;border-radius:10px;background:#fff;color:var(--ink);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;flex-direction:column;font-weight:600}.cal-day small{font-size:10px;color:var(--green)}.cal-day.has-visit{background:#ffe2ee;border-color:#e48aac}.cal-day.chosen{background:#ac286d;color:#fff}.cal-day.chosen small{color:#fff}
+
+/* Крупный и контрастный текст для телефона */
+
+:root {
+  font-size: 17px;
+  --ink: #422039;
+  --muted: #684158;
+  --green: #a51f61;
+}
+
+body {
+  font-size: 17px;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 750;
+}
+
+p, label, dd, dt, li {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.subtitle, .hint, .mini,
+.footer-note, .notice,
+.pilot, .web-warning {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.brand, .offline,
+.section-label, .card-title {
+  font-size: 15px;
+  font-weight: 750;
+}
+
+.stat strong {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.stat span {
+  font-size: 16px;
+  font-weight: 650;
+  color: var(--ink);
+}
+
+.patient h3,
+.visit-card h3 {
+  font-size: 19px;
+  font-weight: 750;
+}
+
+.patient p,
+.visit-date,
+.detail dt,
+.detail dd {
+  font-size: 16px;
+  font-weight: 650;
+}
+
+input, textarea, select {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink);
+  min-height: 48px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #77566a;
+  opacity: 1;
+  font-weight: 500;
+}
+
+button, .btn {
+  font-size: 17px;
+  font-weight: 750;
+  min-height: 46px;
+}
+
+.nav button {
+  font-size: 14px;
+  font-weight: 750;
+  line-height: 1.3;
+  min-height: 65px;
+  color: var(--ink);
+}
+
+.nav button.active {
+  color: var(--green);
+}
+
+.nav button svg {
+  width: 25px;
+  height: 25px;
+}
+
+.mic-panel h3 {
+  font-size: 21px;
+}
+
+.mic-panel p,
+.mic-panel .live,
+#voice-status,
+#patient-voice-status {
+  font-size: 16px;
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.cal-week {
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.cal-day {
+  font-size: 18px;
+  font-weight: 750;
+  min-height: 48px;
+}
+
+.cal-day small {
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.tag, .check,
+.draft-banner p,
+.modal-card p,
+.short-list li {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Настройки для небольших экранов */
+
+@media (max-width: 600px) {
+  .shell {
+    padding: 20px 15px 120px;
+  }
+
+  .nav button {
+    font-size: 13px;
+    padding: 9px 2px;
+    overflow-wrap: anywhere;
+  }
+
+  .nav button svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .stats {
+    gap: 8px;
+  }
+
+  .stat {
+    padding: 14px;
+  }
+
+  .cal-grid {
+    gap: 4px;
+  }
+
+  .cal-day {
+    min-height: 46px;
+  }
+
+  .btn.small {
+    font-size: 15px;
+  }
+}
