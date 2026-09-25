@@ -1,0 +1,16 @@
+
+.system-dictation-action {
+  margin-top: 10px;
+}
+
+.system-dictation-action .btn {
+  font-size: 17px;
+  font-weight: 800;
+  min-height: 50px;
+}
+
+.system-dictation-note {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 700;
+}
